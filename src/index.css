@@ -218,3 +218,55 @@ body {
     /* left: 23.4%; */
     cursor: pointer;
 }
+
+.repo-drc {
+    color: #000;
+    text-decoration: none;
+}
+/* 
+    REPOSITORIES
+*/
+
+
+
+.repo-ctn {
+    width: 60rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+}
+
+.repo-user {
+    border: 1px solid #d0d7de;
+    background-color: #F6F8FA;
+    padding: 0.8em;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px 8px 0 0;
+}
+
+.repo-box {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 1rem; */
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.repo-dscrp {
+    border: 1px solid #d0d7de;
+    background-color: #fff;
+}
+
+.repo-dscrp h3 {
+    cursor: pointer;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.repo-dscrp h3:hover {
+    background: #F6F8FA;
+}

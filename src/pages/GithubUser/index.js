@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import { getApi } from '../../helpers/getApi';
 import blog from '../../img/blog.png';
 import company from '../../img/company.png';
@@ -84,12 +84,14 @@ const GithubUser = () => {
                 <h1 className='ttl-repo'>Repositories</h1>
                 {repos.length > 0 && 
                  repos.map((element) => (
-                <div className="card-user">
-                    <div className="repo-name">
-                        <h1 className='ttl-user'>{element.name}</h1>
-                        <p>{element.language}</p>
+                <Link className='repo-drc' to={`/repos/${userName}/${element.name}`}>
+                    <div className="card-user">
+                        <div className="repo-name">
+                            <h1 className='ttl-user'>{element.name}</h1>
+                            <p>{element.language}</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
                  ))}
             </div>
         </section>

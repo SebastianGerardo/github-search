@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import { getApi } from '../../helpers/getApi'
 
 const GithubResults = () => {
-    const {name} = useParams();
+    const { name } = useParams();
     const history = useNavigate();
 
     const [ githubUser, setGithubUser ] = useState([]);
